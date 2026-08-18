@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Diego Machado Mendanha — Oncologista Clínico em Goiânia | Consulta e Teleconsulta</title>
+<meta name="description" content="Dr. Diego Machado Mendanha, oncologista clínico (CRM-GO 24721 · RQE 19652). Residência pela Unicamp e título de especialista SBOC/AMB. Atende em três endereços em Goiânia e por teleconsulta.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dr. Diego Machado Mendanha — Oncologista Clínico em Goiânia">
+<meta property="og:description" content="Consulta oncológica com tempo para explicar o diagnóstico, as opções de tratamento e o que esperar de cada uma. Três endereços em Goiânia e teleconsulta.">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#0E2429;
+  --ink-2:#1C3B41;
+  --muted:#5C7075;
+  --teal:#12756F;
+  --teal-dk:#0B4F4C;
+  --wa:#128C7E;
+  --wa-dk:#0E7266;
+  --sand:#F7F4EF;
+  --sand-2:#EFEAE1;
+  --line:#E1DCD2;
+  --white:#fff;
+  --amber:#B8802A;
+  --radius:14px;
+  --maxw:1120px;
+  --shadow:0 1px 2px rgba(14,36,41,.05), 0 8px 28px rgba(14,36,41,.07);
+  --shadow-lg:0 2px 4px rgba(14,36,41,.06), 0 18px 50px rgba(14,36,41,.12);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
+body{
+  margin:0; background:var(--white); color:var(--ink);
+  font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:17px; line-height:1.62; -webkit-font-smoothing:antialiased;
+  padding-bottom:env(safe-area-inset-bottom);
+}
+img{max-width:100%; display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:'Newsreader',Georgia,serif; font-weight:500; line-height:1.18; letter-spacing:-.012em; margin:0}
+h1{font-size:clamp(2.05rem,5.1vw,3.5rem)}
+h2{font-size:clamp(1.65rem,3.5vw,2.5rem)}
+h3{font-size:clamp(1.14rem,1.9vw,1.32rem); font-weight:600}
+p{margin:0}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px}
+.narrow{max-width:760px}
+section{padding:clamp(56px,7vw,96px) 0}
+.eyebrow{
+  font-size:.75rem; letter-spacing:.13em; text-transform:uppercase;
+  font-weight:600; color:var(--teal);
+}
+.lead{font-size:clamp(1.02rem,1.6vw,1.15rem); color:var(--ink-2)}
+.muted{color:var(--muted)}
+.small{font-size:.875rem}
+.xs{font-size:.8rem}
+.center{text-align:center}
+.stack>*+*{margin-top:16px}
+
+/* ---------- Skip link ---------- */
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:12px 18px;z-index:200;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--amber); outline-offset:3px; border-radius:6px}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  padding:15px 26px; border-radius:999px; font-weight:600; font-size:1rem;
+  text-decoration:none; border:1.5px solid transparent; cursor:pointer;
+  transition:transform .15s ease, background .15s ease, box-shadow .15s ease, border-color .15s ease;
+  line-height:1.2; text-align:center;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn-wa{background:var(--wa); color:#fff; box-shadow:0 6px 18px rgba(18,140,126,.28)}
+.btn-wa:hover{background:var(--wa-dk); box-shadow:0 10px 26px rgba(18,140,126,.34)}
+.btn-ghost{background:transparent; color:var(--ink); border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink); background:var(--sand)}
+.btn-ghost-light{background:transparent; color:#fff; border-color:rgba(255,255,255,.4)}
+.btn-ghost-light:hover{border-color:#fff; background:rgba(255,255,255,.1)}
+.btn-block{display:flex; width:100%}
+.btn .ico{width:20px;height:20px;flex:0 0 20px;fill:currentColor}
+.btn-sm{padding:12px 20px; font-size:.94rem}
+
+/* ---------- Header ---------- */
+.hdr{
+  position:sticky; top:0; z-index:60; background:rgba(255,255,255,.92);
+  backdrop-filter:saturate(160%) blur(12px); border-bottom:1px solid var(--line);
+}
+.hdr-in{display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:68px; padding:11px 22px}
+.brand{display:flex; flex-direction:column; text-decoration:none; line-height:1.2; min-width:0}
+.brand b{font-family:'Newsreader',serif; font-weight:600; font-size:1.06rem; letter-spacing:-.01em}
+.brand span{font-size:.7rem; color:var(--muted); letter-spacing:.04em}
+@media(max-width:600px){
+  .brand b{font-size:.98rem}
+  .brand span{font-size:.63rem; letter-spacing:.02em}
+}
+.nav{display:none; gap:28px; align-items:center}
+.nav a{text-decoration:none; font-size:.92rem; font-weight:500; color:var(--ink-2)}
+.nav a:hover{color:var(--teal)}
+@media(min-width:960px){ .nav{display:flex} }
+.hdr .btn{display:none}
+@media(min-width:720px){ .hdr .btn{display:inline-flex} }
+
+/* ---------- Hero ---------- */
+.hero{
+  background:
+    radial-gradient(1100px 520px at 88% -12%, rgba(18,117,111,.13), transparent 62%),
+    linear-gradient(180deg,var(--sand) 0%, #fff 100%);
+  padding:clamp(48px,6.5vw,84px) 0 clamp(40px,5vw,64px);
+  border-bottom:1px solid var(--line);
+}
+.hero-grid{display:grid; gap:44px; align-items:center}
+@media(min-width:940px){ .hero-grid{grid-template-columns:1.15fr .85fr; gap:60px} }
+.hero h1{margin:16px 0 0}
+.hero .lead{margin-top:20px; max-width:56ch}
+.hero-cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:30px}
+.hero-note{margin-top:16px; font-size:.85rem; color:var(--muted); display:flex; align-items:center; gap:8px}
+.dot{width:7px;height:7px;border-radius:50%;background:#2BAE66; flex:0 0 7px; box-shadow:0 0 0 4px rgba(43,174,102,.16)}
+
+.card-doc{
+  background:#fff; border:1px solid var(--line); border-radius:20px;
+  box-shadow:var(--shadow-lg); overflow:hidden;
+}
+.card-doc .photo{
+  aspect-ratio:4/5; background:linear-gradient(160deg,var(--sand-2),#DCE5E3);
+  display:flex; align-items:center; justify-content:center; text-align:center;
+  color:var(--muted); font-size:.82rem; position:relative; overflow:hidden;
+}
+.card-doc .photo img{
+  width:100%; height:100%; object-fit:cover;
+  object-position:50% 18%;   /* mantém o rosto no terço superior do recorte 4:5 */
+}
+/* Fallback: aparece só se o arquivo da foto não for encontrado */
+.card-doc .photo.sem-foto{padding:24px}
+.card-doc .photo.sem-foto::after{
+  content:"[ salve a foto escolhida como foto-dr-diego.jpg nesta mesma pasta ]";
+  max-width:26ch; line-height:1.5;
+}
+.card-doc .meta{padding:20px 22px; border-top:1px solid var(--line)}
+.card-doc .meta b{font-family:'Newsreader',serif; font-size:1.15rem; font-weight:600; display:block}
+.card-doc .meta .reg{font-size:.8rem; color:var(--muted); margin-top:4px}
+.stars{display:flex; align-items:center; gap:8px; margin-top:12px; font-size:.85rem}
+.stars .s{color:#E0A21C; letter-spacing:2px; font-size:.95rem}
+
+/* ---------- Trust bar ---------- */
+.trust{background:var(--ink); color:#fff; padding:22px 0}
+.trust-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:18px 12px; text-align:center}
+@media(min-width:820px){ .trust-grid{grid-template-columns:repeat(4,1fr)} }
+.trust b{display:block; font-family:'Newsreader',serif; font-size:1.5rem; font-weight:600}
+.trust span{font-size:.78rem; color:rgba(255,255,255,.66); line-height:1.4; display:block; margin-top:2px}
+
+/* ---------- Generic cards ---------- */
+.grid{display:grid; gap:20px}
+.g2{grid-template-columns:1fr}
+.g3{grid-template-columns:1fr}
+@media(min-width:720px){ .g2{grid-template-columns:1fr 1fr} .g3{grid-template-columns:1fr 1fr} }
+@media(min-width:1000px){ .g3{grid-template-columns:repeat(3,1fr)} }
+
+.card{background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:26px; box-shadow:var(--shadow)}
+.card h3{margin-bottom:8px}
+.card p{color:var(--muted); font-size:.95rem}
+
+.tick{list-style:none; padding:0; margin:0; display:grid; gap:14px}
+.tick li{display:flex; gap:12px; align-items:flex-start; font-size:.98rem}
+.tick svg{width:21px;height:21px;flex:0 0 21px;margin-top:2px;fill:var(--teal)}
+
+/* ---------- Pain section ---------- */
+.pain{background:var(--sand)}
+.pain-list{list-style:none; padding:0; margin:26px 0 0; display:grid; gap:12px}
+.pain-list li{
+  background:#fff; border:1px solid var(--line); border-left:3px solid var(--amber);
+  border-radius:10px; padding:16px 20px; font-size:1rem; color:var(--ink-2);
+}
+
+/* ---------- Steps ---------- */
+.steps{counter-reset:s; display:grid; gap:20px; margin-top:34px}
+@media(min-width:860px){ .steps{grid-template-columns:repeat(3,1fr)} }
+.step{position:relative; padding-top:52px}
+.step::before{
+  counter-increment:s; content:counter(s);
+  position:absolute; top:0; left:0; width:38px; height:38px; border-radius:50%;
+  background:var(--teal); color:#fff; display:grid; place-items:center;
+  font-weight:700; font-size:1rem; font-family:'Inter',sans-serif;
+}
+.step h3{margin-bottom:6px}
+.step p{color:var(--muted); font-size:.95rem}
+
+/* ---------- Testimonials ---------- */
+.quotes{background:var(--sand)}
+.quote{background:#fff; border:1px solid var(--line); border-radius:var(--radius); padding:26px; box-shadow:var(--shadow); display:flex; flex-direction:column}
+.quote p{font-size:.97rem; color:var(--ink-2); flex:1}
+.quote .who{margin-top:18px; padding-top:14px; border-top:1px solid var(--line); font-size:.82rem; color:var(--muted)}
+.quote .who b{color:var(--ink); font-weight:600; display:block; font-family:'Inter',sans-serif; font-size:.88rem}
+.q-mark{font-family:'Newsreader',serif; font-size:2.6rem; line-height:.6; color:var(--sand-2); display:block; margin-bottom:10px}
+
+/* ---------- Carrossel automático de depoimentos ---------- */
+.marquee{
+  position:relative; overflow:hidden; margin-top:34px; padding:6px 0;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 5%,#000 95%,transparent 100%);
+          mask-image:linear-gradient(90deg,transparent 0,#000 5%,#000 95%,transparent 100%);
+}
+.marquee-track{
+  display:flex; gap:20px; width:max-content;
+  animation:desliza var(--vel,64s) linear infinite;
+}
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track{animation-play-state:paused}
+@keyframes desliza{
+  from{transform:translate3d(-50%,0,0)}   /* entra pela esquerda */
+  to  {transform:translate3d(0,0,0)}      /* e caminha para a direita */
+}
+.marquee .quote{flex:0 0 min(330px,80vw); width:min(330px,80vw); margin:0}
+.marquee .quote p{font-size:.94rem}
+@media (prefers-reduced-motion: reduce){
+  .marquee{overflow-x:auto; -webkit-mask-image:none; mask-image:none; scroll-snap-type:x mandatory}
+  .marquee-track{animation:none}
+  .marquee .quote{scroll-snap-align:center}
+}
+
+/* ---------- Locations ---------- */
+.loc-grid{display:grid; gap:22px; margin-top:38px}
+@media(min-width:780px){ .loc-grid{grid-template-columns:1fr 1fr} }
+.loc{
+  background:#fff; border:1px solid var(--line); border-radius:18px; padding:0;
+  box-shadow:var(--shadow); display:flex; flex-direction:column; overflow:hidden;
+  transition:box-shadow .18s ease, transform .18s ease;
+}
+.loc:hover{box-shadow:var(--shadow-lg); transform:translateY(-2px)}
+.loc-top{padding:26px 26px 0}
+.loc-body{padding:0 26px; flex:1}
+.loc-foot{padding:22px 26px 26px}
+.tag{
+  display:inline-block; font-size:.7rem; font-weight:700; letter-spacing:.09em;
+  text-transform:uppercase; padding:5px 11px; border-radius:999px; margin-bottom:14px;
+}
+.tag-conv{background:#E6F1F0; color:var(--teal-dk)}
+.tag-sus{background:#EAF0F7; color:#2A4C7A}
+.tag-tele{background:#FBF0DF; color:#8A5D12}
+.loc h3{font-size:1.28rem; margin-bottom:6px}
+.loc .inst{font-size:.82rem; color:var(--muted); margin-bottom:16px}
+.loc address{font-style:normal; font-size:.92rem; color:var(--ink-2); display:flex; gap:10px; align-items:flex-start; margin-bottom:16px}
+.loc address svg{width:18px;height:18px;flex:0 0 18px;margin-top:3px;fill:var(--muted)}
+.loc dl{margin:0 0 4px; display:grid; grid-template-columns:auto 1fr; gap:7px 14px; font-size:.89rem}
+.loc dt{color:var(--muted)}
+.loc dd{margin:0; font-weight:500}
+.loc .fine{font-size:.8rem; color:var(--muted); margin-top:14px; line-height:1.5}
+.map-link{font-size:.84rem; color:var(--teal); text-decoration:underline; text-underline-offset:3px; font-weight:500}
+
+/* ---------- Convênios ---------- */
+.chips{display:flex; flex-wrap:wrap; gap:9px; margin-top:24px}
+.chip{background:#fff; border:1px solid var(--line); border-radius:999px; padding:9px 17px; font-size:.87rem; font-weight:500; color:var(--ink-2)}
+
+/* ---------- Dark CTA ---------- */
+.dark{background:linear-gradient(150deg,var(--ink) 0%, #123A3E 100%); color:#fff}
+.dark h2{color:#fff}
+.dark p{color:rgba(255,255,255,.76)}
+.dark .btn-wa{box-shadow:0 10px 30px rgba(0,0,0,.3)}
+
+/* ---------- FAQ ---------- */
+details{border-bottom:1px solid var(--line); padding:4px 0}
+details summary{
+  cursor:pointer; list-style:none; padding:20px 44px 20px 0; position:relative;
+  font-weight:600; font-size:1.02rem; color:var(--ink);
+}
+details summary::-webkit-details-marker{display:none}
+details summary::after{
+  content:""; position:absolute; right:8px; top:26px; width:11px; height:11px;
+  border-right:2px solid var(--teal); border-bottom:2px solid var(--teal);
+  transform:rotate(45deg); transition:transform .2s ease;
+}
+details[open] summary::after{transform:rotate(-135deg); top:30px}
+details .ans{padding:0 8px 22px 0; color:var(--muted); font-size:.97rem}
+details .ans a{color:var(--teal)}
+
+/* ---------- Footer ---------- */
+.ftr{background:var(--sand); border-top:1px solid var(--line); padding:56px 0 130px; font-size:.88rem; color:var(--muted)}
+@media(min-width:720px){ .ftr{padding-bottom:56px} }
+.ftr-grid{display:grid; gap:32px}
+@media(min-width:820px){ .ftr-grid{grid-template-columns:1.4fr 1fr 1fr} }
+.ftr b{color:var(--ink); font-weight:600; display:block; margin-bottom:10px; font-size:.9rem}
+.ftr a{color:var(--muted)}
+.ftr ul{list-style:none; margin:0; padding:0; display:grid; gap:8px}
+.legal{margin-top:38px; padding-top:24px; border-top:1px solid var(--line); font-size:.78rem; line-height:1.6}
+
+/* ---------- Sticky mobile bar ---------- */
+.sticky{
+  position:fixed; left:0; right:0; bottom:0; z-index:70;
+  background:rgba(255,255,255,.96); backdrop-filter:blur(12px);
+  border-top:1px solid var(--line); padding:11px 14px calc(11px + env(safe-area-inset-bottom));
+  box-shadow:0 -6px 24px rgba(14,36,41,.09);
+  transform:translateY(120%); transition:transform .28s ease;
+}
+.sticky.on{transform:translateY(0)}
+@media(min-width:720px){ .sticky{display:none} }
+
+.hidden{display:none}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#topo">
+      <b>Dr. Diego Machado Mendanha</b>
+      <span>Médico · Oncologista Clínico · CRM-GO 24721 · RQE 19652</span>
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#atendimento">Atendimento</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#locais">Locais</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-wa btn-sm" href="#locais" data-cta="header">
+      <svg class="ico" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.62 4.15 3.67.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+      Agendar consulta
+    </a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- ============ HERO — Q de QUEST: qualificar ============ -->
+<section class="hero" id="conteudo">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Oncologia Clínica · Goiânia, GO</p>
+      <h1>Entender o seu diagnóstico é o primeiro passo do tratamento.</h1>
+      <p class="lead">
+        Sou o <strong>Dr. Diego Machado Mendanha</strong>, oncologista clínico com residência pela
+        <strong>Unicamp</strong> e título de especialista pela <strong>SBOC/AMB</strong>.
+        Atendo em três endereços em Goiânia — por convênio e pelo SUS — e também por
+        <strong>teleconsulta particular</strong>, para quem está em outra cidade ou não pode se deslocar.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-wa" href="#locais" data-cta="hero-primario">
+          <svg class="ico" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.62 4.15 3.67.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+          Escolher onde ser atendido
+        </a>
+        <a class="btn btn-ghost" href="#atendimento" data-cta="hero-secundario">Como é a consulta</a>
+      </div>
+      <p class="hero-note"><span class="dot" aria-hidden="true"></span> Resposta pelo WhatsApp em horário comercial · Convênios, SUS e particular</p>
+    </div>
+
+    <aside class="card-doc" aria-label="Cartão do médico">
+      <!-- Salve a foto escolhida como "foto-dr-diego.jpg" na mesma pasta deste arquivo. -->
+      <div class="photo">
+        <img src="foto-dr-diego.jpg"
+             alt="Dr. Diego Machado Mendanha, oncologista clínico, em seu consultório"
+             onerror="this.parentNode.classList.add('sem-foto'); this.remove();">
+      </div>
+      <div class="meta">
+        <b>Dr. Diego Machado Mendanha</b>
+        <span class="reg">Médico · Oncologista Clínico<br>CRM-GO 24721 · RQE nº 19652</span>
+        <div class="stars">
+          <span class="s" aria-hidden="true">★★★★★</span>
+          <span class="muted">5,0 · 93 avaliações no Doctoralia</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR — E de QUEST: evidências ============ -->
+<div class="trust">
+  <div class="wrap trust-grid">
+    <div><b>Unicamp</b><span>Residência em Oncologia Clínica</span></div>
+    <div><b>SBOC/AMB</b><span>Título de Especialista em Oncologia Clínica</span></div>
+    <div><b>5,0 ★</b><span>Média em 93 avaliações verificadas</span></div>
+    <div><b>3 + 1</b><span>Endereços em Goiânia e teleconsulta</span></div>
+  </div>
+</div>
+
+<!-- ============ DORES — motivação / PAS ============ -->
+<section class="pain">
+  <div class="wrap narrow">
+    <p class="eyebrow">Se você chegou até aqui</p>
+    <h2 style="margin-top:14px">Provavelmente você está lidando com uma destas situações.</h2>
+    <ul class="pain-list">
+      <li>Recebeu um laudo de biópsia ou de exame de imagem e não entendeu metade dos termos.</li>
+      <li>Ouviu uma proposta de tratamento e não sabe se existem outras opções para o seu caso.</li>
+      <li>Está aguardando na fila e sente que o tempo está passando sem uma definição.</li>
+      <li>Quer uma segunda opinião sobre o diagnóstico ou a conduta, mas não sabe a quem recorrer.</li>
+      <li>Mora em outra cidade e precisa de acompanhamento sem viajar toda semana.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ URGÊNCIA — U de QUEST (crível, não sensacionalista) ============ -->
+<section>
+  <div class="wrap narrow center">
+    <p class="eyebrow">Por que a sequência importa</p>
+    <h2 style="margin-top:14px">Câncer é uma doença tempo-dependente.</h2>
+    <p class="lead muted" style="margin-top:20px">
+      Entre a suspeita e o início do tratamento existe uma sequência — biópsia, imunoistoquímica,
+      estadiamento, definição de conduta. Quando essa sequência é organizada desde o começo por um
+      oncologista clínico, evitam-se exames repetidos, encaminhamentos em círculo e semanas perdidas
+      entre uma etapa e outra. A primeira consulta serve exatamente para montar esse mapa.
+    </p>
+  </div>
+</section>
+
+<!-- ============ COMO É A CONSULTA — S de QUEST: solução ============ -->
+<section id="atendimento" style="background:var(--sand); border-top:1px solid var(--line); border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="narrow">
+      <p class="eyebrow">Como funciona</p>
+      <h2 style="margin-top:14px">Uma consulta que começa pelos seus exames.</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <h3>Leitura conjunta do caso</h3>
+        <p>Revisamos laudos, exames de imagem e histórico juntos, em português — o que o resultado diz, o que ainda falta e o que já dá para concluir.</p>
+      </div>
+      <div class="step">
+        <h3>Estadiamento e conduta</h3>
+        <p>Definimos quais exames completam o estadiamento e quais caminhos terapêuticos existem para o seu tipo e estágio, com os prós e contras de cada um.</p>
+      </div>
+      <div class="step">
+        <h3>Plano e acompanhamento</h3>
+        <p>Você sai com o plano por escrito: o que será feito, em que ordem, quais efeitos esperar e quando procurar atendimento entre as sessões.</p>
+      </div>
+    </div>
+
+    <div class="grid g2" style="margin-top:44px">
+      <div class="card">
+        <h3>O que é tratado</h3>
+        <p style="margin-bottom:14px">Tumores sólidos do adulto, entre eles:</p>
+        <p>mama · próstata · pulmão · colorretal · estômago · pâncreas · fígado · rim · bexiga · ovário · colo do útero · endométrio · testículo · pênis · tireoide · esôfago · laringe · cavidade oral · língua · canal anal · pele e melanoma · tumores neuroendócrinos.</p>
+      </div>
+      <div class="card">
+        <h3>Modalidades conduzidas</h3>
+        <ul class="tick" style="margin-top:14px">
+          <li><svg viewBox="0 0 24 24"><path d="M9.55 17.6 4.4 12.45l1.4-1.4 3.75 3.74 8.65-8.65 1.4 1.42Z"/></svg> Quimioterapia</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9.55 17.6 4.4 12.45l1.4-1.4 3.75 3.74 8.65-8.65 1.4 1.42Z"/></svg> Imunoterapia e terapia-alvo</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9.55 17.6 4.4 12.45l1.4-1.4 3.75 3.74 8.65-8.65 1.4 1.42Z"/></svg> Segunda opinião sobre diagnóstico e conduta</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9.55 17.6 4.4 12.45l1.4-1.4 3.75 3.74 8.65-8.65 1.4 1.42Z"/></svg> Acompanhamento e retorno pós-tratamento</li>
+          <li><svg viewBox="0 0 24 24"><path d="M9.55 17.6 4.4 12.45l1.4-1.4 3.75 3.74 8.65-8.65 1.4 1.42Z"/></svg> Investigação de suspeita e rastreamento</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVALIAÇÕES — prova social ============ -->
+<section class="quotes" id="avaliacoes" style="background:#fff">
+  <div class="wrap">
+    <div class="narrow">
+      <p class="eyebrow">Avaliações verificadas</p>
+      <h2 style="margin-top:14px">93 avaliações no Doctoralia, média 5,0.</h2>
+      <p class="lead muted" style="margin-top:16px">
+        Comentários publicados por pacientes na plataforma, após consulta confirmada.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="marquee" id="carrossel" aria-label="Depoimentos de pacientes publicados no Doctoralia">
+    <div class="marquee-track" id="trilha">
+      <article class="quote">
+        <span class="q-mark" aria-hidden="true">“</span>
+        <p>Me explicou tudo sobre os tratamentos com medicações e imunoterapia. Fiquei feliz de saber como a ciência evoluiu no tratamento desse câncer. Um médico competente, conhecedor da ciência, atencioso e educado.</p>
+        <div class="who"><b>Alberto Q. C.</b>Primeira consulta · junho de 2026</div>
+      </article>
+      <article class="quote">
+        <span class="q-mark" aria-hidden="true">“</span>
+        <p>Atendimento muito humanizado. Dr. Diego é muito atencioso e acolhedor.</p>
+        <div class="who"><b>W. C. S.</b>Primeira consulta · maio de 2026</div>
+      </article>
+      <article class="quote">
+        <span class="q-mark" aria-hidden="true">“</span>
+        <p>Consulta bem detalhada, médico atencioso, e atenção de todos na clínica.</p>
+        <div class="who"><b>Simone e Alex</b>Retorno de consulta · julho de 2026</div>
+      </article>
+      <article class="quote">
+        <span class="q-mark" aria-hidden="true">“</span>
+        <p>Deu muita atenção e explicou muito bem meus exames.</p>
+        <div class="who"><b>J. M. P.</b>Consulta · abril de 2026</div>
+      </article>
+      <article class="quote">
+        <span class="q-mark" aria-hidden="true">“</span>
+        <p>Foi tudo ótimo. Excelente atendimento. Doutor muito atencioso, e passou muita confiança.</p>
+        <div class="who"><b>Roberto</b>Consulta · abril de 2026</div>
+      </article>
+      <article class="quote">
+        <span class="q-mark" aria-hidden="true">“</span>
+        <p>Um profissional atencioso, que se preocupa com o bem-estar do paciente.</p>
+        <div class="who"><b>Regina de Fátima</b>Retorno de consulta · junho de 2026</div>
+      </article>
+      <article class="quote">
+        <span class="q-mark" aria-hidden="true">“</span>
+        <p>Uma pessoa atenciosa demais com os pacientes, bem explicativo.</p>
+        <div class="who"><b>Ediney</b>Consulta · abril de 2026</div>
+      </article>
+      <article class="quote">
+        <span class="q-mark" aria-hidden="true">“</span>
+        <p>Médico muito explicativo, muito atencioso. Gostei muito.</p>
+        <div class="who"><b>Valdimundo Júnior</b>Consulta · maio de 2026</div>
+      </article>
+      <article class="quote">
+        <span class="q-mark" aria-hidden="true">“</span>
+        <p>Ótimo atendimento, muito profissional, muito atencioso.</p>
+        <div class="who"><b>Adriana</b>Primeira consulta · julho de 2026</div>
+      </article>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <p class="center small muted" style="margin-top:26px">
+      <a class="map-link" href="https://www.doctoralia.com.br/diego-machado-mendanha/oncologista/goiania" target="_blank" rel="noopener nofollow">Ver todas as avaliações no Doctoralia →</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============ LOCAIS — os 4 CTAs ============ -->
+<section id="locais" style="background:var(--sand); border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="narrow">
+      <p class="eyebrow">Onde ser atendido</p>
+      <h2 style="margin-top:14px">Escolha o local mais conveniente — e fale direto com a secretaria.</h2>
+      <p class="lead muted" style="margin-top:16px">
+        Cada endereço tem um fluxo próprio de agendamento e aceita formas de atendimento diferentes.
+        Selecione abaixo e o WhatsApp abre com a mensagem já preenchida.
+      </p>
+    </div>
+
+    <div class="loc-grid">
+
+      <!-- 1. CEO -->
+      <article class="loc">
+        <div class="loc-top">
+          <span class="tag tag-conv">Convênios e particular</span>
+          <h3>Centro Especializado em Oncologia (CEO)</h3>
+          <p class="inst">Setor Marista · Goiânia</p>
+        </div>
+        <div class="loc-body">
+          <address>
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+            Alameda Coronel Eugênio Jardim, 330 — Qd. 218, Lt. 14, 1º andar<br>Setor Marista, Goiânia/GO · 74175-100
+          </address>
+          <dl>
+            <dt>Atende</dt><dd>Adultos · convênio e particular</dd>
+            <dt>Primeira consulta particular</dt><dd>R$ 450,00</dd>
+            <dt>Telefone</dt><dd><a href="tel:+556240539162">(62) 4053-9162</a></dd>
+          </dl>
+          <p class="fine">Local com estrutura para quimioterapia e imunoterapia. Confirme a cobertura do seu plano no momento do agendamento.</p>
+        </div>
+        <div class="loc-foot">
+          <a class="btn btn-wa btn-block" data-wa="ceo" data-cta="local-ceo" href="#">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.62 4.15 3.67.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+            Agendar no CEO — Setor Marista
+          </a>
+          <p class="center" style="margin-top:12px">
+            <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Alameda+Coronel+Eug%C3%AAnio+Jardim%2C+330%2C+Setor+Marista%2C+Goi%C3%A2nia">Ver no mapa</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- 2. IMO -->
+      <article class="loc">
+        <div class="loc-top">
+          <span class="tag tag-conv">Convênios</span>
+          <h3>Instituto de Mastologia e Oncologia (IMO)</h3>
+          <p class="inst">Setor Oeste · Goiânia</p>
+        </div>
+        <div class="loc-body">
+          <address>
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+            Alameda das Rosas, 533<br>Setor Oeste, Goiânia/GO · 74110-060
+          </address>
+          <dl>
+            <dt>Atende</dt><dd>Adultos · convênio</dd>
+            <dt>Perfil</dt><dd>Mastologia e oncologia integradas</dd>
+            <dt>Telefone</dt><dd><span data-tel="imo">[PREENCHER]</span></dd>
+          </dl>
+          <p class="fine">Referência em casos de mama, com discussão conjunta entre mastologia e oncologia clínica no mesmo serviço.</p>
+        </div>
+        <div class="loc-foot">
+          <a class="btn btn-wa btn-block" data-wa="imo" data-cta="local-imo" href="#">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.62 4.15 3.67.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+            Agendar no IMO — Setor Oeste
+          </a>
+          <p class="center" style="margin-top:12px">
+            <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Alameda+das+Rosas%2C+533%2C+Setor+Oeste%2C+Goi%C3%A2nia">Ver no mapa</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- 3. Araújo Jorge -->
+      <article class="loc">
+        <div class="loc-top">
+          <span class="tag tag-sus">Atendimento pelo SUS</span>
+          <h3>Hospital de Câncer Araújo Jorge (ACCG)</h3>
+          <p class="inst">Setor Leste Universitário · Goiânia</p>
+        </div>
+        <div class="loc-body">
+          <address>
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+            Rua 239, nº 181<br>Setor Leste Universitário, Goiânia/GO
+          </address>
+          <dl>
+            <dt>Atende</dt><dd>Adultos · SUS</dd>
+            <dt>Como chegar até aqui</dt><dd>Encaminhamento e regulação</dd>
+            <dt>Telefone</dt><dd><span data-tel="aj">[PREENCHER]</span></dd>
+          </dl>
+          <p class="fine">O agendamento no Araújo Jorge segue o fluxo do SUS: encaminhamento da unidade de origem e regulação. Não é possível marcar diretamente com o médico — mas dá para tirar dúvidas sobre o caminho.</p>
+        </div>
+        <div class="loc-foot">
+          <a class="btn btn-wa btn-block" data-wa="aj" data-cta="local-araujo-jorge" href="#">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.62 4.15 3.67.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+            Tirar dúvidas sobre o SUS
+          </a>
+          <p class="center" style="margin-top:12px">
+            <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hospital+de+C%C3%A2ncer+Ara%C3%BAjo+Jorge%2C+Goi%C3%A2nia">Ver no mapa</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- 4. Teleconsulta -->
+      <article class="loc">
+        <div class="loc-top">
+          <span class="tag tag-tele">Teleconsulta · particular</span>
+          <h3>Consulta por vídeo, de qualquer cidade</h3>
+          <p class="inst">Atendimento on-line · todo o Brasil</p>
+        </div>
+        <div class="loc-body">
+          <address>
+            <svg viewBox="0 0 24 24"><path d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11Z"/></svg>
+            Você recebe o link por SMS e e-mail 30 minutos antes do horário.
+          </address>
+          <dl>
+            <dt>Atende</dt><dd>Adultos · particular</dd>
+            <dt>Valor</dt><dd>R$ 450,00</dd>
+            <dt>Inclui</dt><dd>Prescrição e pedidos digitais</dd>
+          </dl>
+          <p class="fine">Indicada para segunda opinião, revisão de laudos, acompanhamento entre ciclos e para quem está fora de Goiânia. Se o caso exigir exame físico, isso é dito na própria consulta.</p>
+        </div>
+        <div class="loc-foot">
+          <a class="btn btn-wa btn-block" data-wa="tele" data-cta="teleconsulta" href="#">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.62 4.15 3.67.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+            Agendar teleconsulta
+          </a>
+          <p class="center xs muted" style="margin-top:12px">Prescrição digital com validade nacional</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONVÊNIOS — redução de incerteza ============ -->
+<section>
+  <div class="wrap narrow">
+    <p class="eyebrow">Cobertura</p>
+    <h2 style="margin-top:14px">Convênios atendidos</h2>
+    <p class="lead muted" style="margin-top:16px">
+      A cobertura pode variar por plano e por endereço. Confirme o seu no agendamento — a secretaria verifica antes de marcar.
+    </p>
+    <div class="chips">
+      <span class="chip">Unimed</span>
+      <span class="chip">Central Unimed</span>
+      <span class="chip">Bradesco Saúde</span>
+      <span class="chip">SulAmérica Saúde</span>
+      <span class="chip">Amil</span>
+      <span class="chip">Ipasgo</span>
+      <span class="chip">AFFEGO</span>
+      <span class="chip">Assego</span>
+      <span class="chip">FUSEX — Exército Brasileiro</span>
+      <span class="chip">VIVACOM</span>
+      <span class="chip">SUS (Araújo Jorge)</span>
+      <span class="chip">Particular</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRANSFORMAÇÃO — T de QUEST ============ -->
+<section class="dark">
+  <div class="wrap narrow center">
+    <p class="eyebrow" style="color:#7FD3C4">O que muda</p>
+    <h2 style="margin-top:14px">Sair da consulta sabendo exatamente qual é o próximo passo.</h2>
+    <p class="lead" style="margin-top:20px">
+      Não existe promessa de resultado em oncologia — e quem promete deveria acender um alerta.
+      O que existe é decisão bem informada: entender o diagnóstico, conhecer as opções reais para o
+      seu caso e escolher o caminho com o médico que vai conduzir o tratamento do começo ao fim.
+    </p>
+    <div style="margin-top:32px">
+      <a class="btn btn-wa" href="#locais" data-cta="cta-final">
+        <svg class="ico" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.62 4.15 3.67.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+        Escolher local e agendar
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ — quebra de objeções ============ -->
+<section id="duvidas">
+  <div class="wrap narrow">
+    <p class="eyebrow">Antes de agendar</p>
+    <h2 style="margin-top:14px">Dúvidas frequentes</h2>
+
+    <div style="margin-top:26px">
+      <details open>
+        <summary>Preciso de encaminhamento para marcar?</summary>
+        <div class="ans">Para consulta particular ou por convênio no CEO e no IMO, não é obrigatório encaminhamento — você pode agendar direto. Alguns planos exigem guia ou autorização prévia; a secretaria informa no momento do agendamento. Já o atendimento no Hospital Araújo Jorge é pelo SUS e depende de encaminhamento e regulação.</div>
+      </details>
+      <details>
+        <summary>Quais exames e documentos levar na primeira consulta?</summary>
+        <div class="ans">Traga documento com foto, cartão do convênio (se houver), todos os laudos de biópsia e imunoistoquímica, exames de imagem recentes (com as mídias, não só os laudos), exames de sangue e a lista dos medicamentos que você usa. Se já esteve com outro oncologista, traga também os relatórios e prescrições anteriores.</div>
+      </details>
+      <details>
+        <summary>Posso pedir uma segunda opinião mesmo já estando em tratamento?</summary>
+        <div class="ans">Sim. Buscar segunda opinião é uma prática normal e legítima em oncologia, e não interrompe nem prejudica o tratamento em curso. A consulta serve para revisar o diagnóstico, o estadiamento e a conduta proposta — a decisão sobre continuar ou não continua sendo sua.</div>
+      </details>
+      <details>
+        <summary>A teleconsulta serve para a primeira consulta ou só para retorno?</summary>
+        <div class="ans">Serve para as duas situações. Para a primeira consulta, é especialmente útil quando já existem laudos e exames a revisar — que é o caso da maioria dos pacientes que chegam com diagnóstico. Se o seu caso exigir exame físico ou avaliação presencial, isso é dito na própria teleconsulta e o encaminhamento é combinado.</div>
+      </details>
+      <details>
+        <summary>Quanto custa a consulta particular?</summary>
+        <div class="ans">A primeira consulta particular e a teleconsulta custam <strong>R$ 450,00</strong>. Formas de pagamento aceitas e valores de retorno são informados pela secretaria no agendamento. Atendimentos por convênio e pelo SUS não têm custo direto para o paciente.</div>
+      </details>
+      <details>
+        <summary>O atendimento no Araújo Jorge é pelo SUS?</summary>
+        <div class="ans">Sim. O Hospital de Câncer Araújo Jorge (ACCG) é referência em oncologia no SUS em Goiás. O acesso acontece por encaminhamento da sua unidade de saúde e regulação — não é possível marcar diretamente com o médico. Pelo WhatsApp dá para entender o caminho e o que preparar.</div>
+      </details>
+      <details>
+        <summary>Posso levar um acompanhante?</summary>
+        <div class="ans">Sim, e é recomendado. Consultas oncológicas trazem muita informação de uma vez; ter alguém junto ajuda a reter o que foi dito e a fazer as perguntas que ficaram. Na teleconsulta, o acompanhante pode participar da mesma chamada.</div>
+      </details>
+      <details>
+        <summary>Em quanto tempo consigo ser atendido?</summary>
+        <div class="ans">Depende do endereço e do tipo de atendimento. Casos com diagnóstico já fechado ou suspeita em investigação são priorizados na agenda sempre que possível. Ao chamar no WhatsApp, descreva brevemente a situação — isso ajuda a secretaria a encaixar o horário adequado.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <b>Dr. Diego Machado Mendanha</b>
+        <p>Médico · Oncologista Clínico<br>
+        CRM-GO 24721 · RQE nº 19652<br>
+        Residência em Oncologia Clínica — Unicamp<br>
+        Título de Especialista — SBOC/AMB</p>
+        <p style="margin-top:14px">
+          <a href="https://www.instagram.com/drdiego.machado/" target="_blank" rel="noopener">Instagram @drdiego.machado</a>
+        </p>
+      </div>
+      <div>
+        <b>Endereços</b>
+        <ul>
+          <li>CEO — Al. Cel. Eugênio Jardim, 330, Setor Marista</li>
+          <li>IMO — Al. das Rosas, 533, Setor Oeste</li>
+          <li>Araújo Jorge — Rua 239, 181, St. Leste Universitário</li>
+          <li>Teleconsulta — atendimento on-line</li>
+        </ul>
+      </div>
+      <div>
+        <b>Navegar</b>
+        <ul>
+          <li><a href="#atendimento">Como é a consulta</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#locais">Locais de atendimento</a></li>
+          <li><a href="#duvidas">Dúvidas frequentes</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="legal">
+      Este site tem caráter exclusivamente informativo e não substitui a consulta médica presencial
+      nem estabelece relação médico-paciente. Nenhum resultado de tratamento é garantido, prometido
+      ou insinuado. As informações aqui publicadas seguem a Resolução CFM nº 2.336/2023.
+      Em caso de emergência, procure o serviço de urgência mais próximo ou ligue 192 (SAMU).<br><br>
+      © <span id="ano">2026</span> Dr. Diego Machado Mendanha — Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE CTA ============ -->
+<div class="sticky" id="sticky">
+  <div style="display:flex; gap:9px">
+    <a class="btn btn-wa btn-sm" style="flex:1" href="#locais" data-cta="sticky-locais">
+      <svg class="ico" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.62 4.15 3.67.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+      Agendar consulta
+    </a>
+    <a class="btn btn-ghost btn-sm" href="tel:+556240539162" data-cta="sticky-tel" aria-label="Ligar">
+      <svg class="ico" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1Z"/></svg>
+    </a>
+  </div>
+</div>
+
+<script>
+/* =====================================================================
+   ⚠️  CONFIGURAÇÃO — PREENCHER ANTES DE PUBLICAR
+   Números no formato internacional, só dígitos: 55 + DDD + número.
+   Ex.: (62) 99999-8888  ->  "5562999998888"
+   ===================================================================== */
+const CONTATOS = {
+  ceo: {
+    numero: "556240539162",                 // (62) 4053-9162 — CONFIRMAR se é WhatsApp
+    texto:  "Olá! Vim pelo site do Dr. Diego Machado e gostaria de agendar uma consulta no CEO (Setor Marista)."
+  },
+  imo: {
+    numero: "5562000000000",                // ⚠️ PREENCHER — WhatsApp do IMO
+    texto:  "Olá! Vim pelo site do Dr. Diego Machado e gostaria de agendar uma consulta no IMO (Setor Oeste)."
+  },
+  aj: {
+    numero: "5562000000000",                // ⚠️ PREENCHER — contato p/ orientação SUS
+    texto:  "Olá! Vim pelo site do Dr. Diego Machado e gostaria de entender como ser atendido no Hospital Araújo Jorge pelo SUS."
+  },
+  tele: {
+    numero: "556240539162",                 // ⚠️ CONFIRMAR — WhatsApp da teleconsulta
+    texto:  "Olá! Vim pelo site do Dr. Diego Machado e gostaria de agendar uma teleconsulta particular."
+  }
+};
+
+/* ---------- Captura de UTM (persiste na sessão) ---------- */
+const UTM_KEYS = ["utm_source","utm_medium","utm_campaign","utm_adset","utm_adname",
+                  "utm_placement","utm_term","keyword","gclid","fbclid","parceiro"];
+function lerUTMs(){
+  const p = new URLSearchParams(location.search);
+  const out = {};
+  UTM_KEYS.forEach(k => { const v = p.get(k); if (v) out[k] = v; });
+  try{
+    if (Object.keys(out).length) sessionStorage.setItem("utm_dr_diego", JSON.stringify(out));
+    else {
+      const salvo = sessionStorage.getItem("utm_dr_diego");
+      if (salvo) return JSON.parse(salvo);
+    }
+  }catch(e){}
+  return out;
+}
+const UTMS = lerUTMs();
+
+function assinaturaOrigem(){
+  const s = UTMS.utm_source, c = UTMS.utm_campaign;
+  if (!s && !c) return "";
+  return "\n\n[origem: " + [s, c].filter(Boolean).join(" / ") + "]";
+}
+
+/* ---------- Monta os links de WhatsApp ---------- */
+document.querySelectorAll("[data-wa]").forEach(el => {
+  const cfg = CONTATOS[el.getAttribute("data-wa")];
+  if (!cfg) return;
+  el.href = "https://wa.me/" + cfg.numero + "?text=" + encodeURIComponent(cfg.texto + assinaturaOrigem());
+  el.target = "_blank";
+  el.rel = "noopener";
+});
+
+/* ---------- Eventos para GA4 / GTM / Meta Pixel ---------- */
+window.dataLayer = window.dataLayer || [];
+document.querySelectorAll("[data-cta]").forEach(el => {
+  el.addEventListener("click", () => {
+    const nome = el.getAttribute("data-cta");
+    window.dataLayer.push({ event:"cta_click", cta_id:nome, ...UTMS });
+    if (el.hasAttribute("data-wa")){
+      window.dataLayer.push({ event:"generate_lead", metodo:"whatsapp", local:nome, ...UTMS });
+      if (typeof fbq === "function") fbq("track","Contact",{content_name:nome});
+      if (typeof gtag === "function") gtag("event","generate_lead",{method:"whatsapp",local:nome});
+    }
+  });
+});
+
+/* ---------- Carrossel de depoimentos: duplica os cards p/ loop infinito ---------- */
+(function(){
+  const trilha = document.getElementById("trilha");
+  const caixa  = document.getElementById("carrossel");
+  if (!trilha || !caixa) return;
+
+  const originais = Array.from(trilha.children);
+  originais.forEach(n => {                       // 2ª cópia = loop sem emenda
+    const c = n.cloneNode(true);
+    c.setAttribute("aria-hidden","true");
+    trilha.appendChild(c);
+  });
+
+  // Velocidade constante (~55px/s) independente da quantidade de depoimentos.
+  requestAnimationFrame(() => {
+    const largura = trilha.scrollWidth / 2;
+    trilha.style.setProperty("--vel", Math.round(largura / 55) + "s");
+  });
+
+  // Pausa quando a seção sai da tela (economiza bateria no celular)
+  if ("IntersectionObserver" in window){
+    new IntersectionObserver(([e]) => {
+      trilha.style.animationPlayState = e.isIntersecting ? "running" : "paused";
+    }, {threshold:0}).observe(caixa);
+  }
+})();
+
+/* ---------- Barra fixa no mobile após o hero ---------- */
+const sticky = document.getElementById("sticky");
+const alvo = document.querySelector(".trust");
+if (sticky && alvo && "IntersectionObserver" in window){
+  new IntersectionObserver(([e]) => {
+    sticky.classList.toggle("on", !e.isIntersecting && e.boundingClientRect.top < 0);
+  }, {threshold:0}).observe(alvo);
+}
+
+/* ---------- Ano no rodapé ---------- */
+document.getElementById("ano").textContent = new Date().getFullYear();
+
+/* ---------- Acordeão: fecha os outros ---------- */
+document.querySelectorAll("#duvidas details").forEach(d => {
+  d.addEventListener("toggle", () => {
+    if (d.open) document.querySelectorAll("#duvidas details").forEach(o => { if (o !== d) o.open = false; });
+  });
+});
+</script>
+
+<!-- ============ SEO — dados estruturados ============ -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Physician",
+  "name":"Dr. Diego Machado Mendanha",
+  "medicalSpecialty":"Oncologic",
+  "description":"Oncologista clínico em Goiânia. Residência em Oncologia Clínica pela Unicamp e título de especialista pela SBOC/AMB. CRM-GO 24721, RQE 19652. Atendimento por convênio, SUS e teleconsulta particular.",
+  "sameAs":[
+    "https://www.doctoralia.com.br/diego-machado-mendanha/oncologista/goiania",
+    "https://www.instagram.com/drdiego.machado/"
+  ],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"93"},
+  "availableService":[
+    {"@type":"MedicalTherapy","name":"Quimioterapia"},
+    {"@type":"MedicalTherapy","name":"Imunoterapia"},
+    {"@type":"MedicalProcedure","name":"Consulta e segunda opinião em oncologia clínica"}
+  ],
+  "address":[
+    {"@type":"PostalAddress","streetAddress":"Alameda Coronel Eugênio Jardim, 330, Qd 218 Lt 14, 1º andar","addressLocality":"Goiânia","addressRegion":"GO","postalCode":"74175-100","addressCountry":"BR"},
+    {"@type":"PostalAddress","streetAddress":"Alameda das Rosas, 533","addressLocality":"Goiânia","addressRegion":"GO","postalCode":"74110-060","addressCountry":"BR"},
+    {"@type":"PostalAddress","streetAddress":"Rua 239, nº 181, Setor Leste Universitário","addressLocality":"Goiânia","addressRegion":"GO","addressCountry":"BR"}
+  ],
+  "telephone":"+556240539162"
+}
+</script>
+</body>
+</html>
